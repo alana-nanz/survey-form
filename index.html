@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <h1 id="title">Survey</h1>
+  <p id="description">Thank you for filling out this survey.</p>
+</header>
+
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input type="text" name="name" id="name" placeholder="Enter your name" required />
+
+  <label id="email-label" for="email">Email</label>
+  <input type="email" name="email" id="email" placeholder="Enter your email" required />
+
+  <label id="number-label" for="number">Age</label>
+  <input type="number" name="age" id="number" min="10" max="99" placeholder="Age" />
+
+  <label id="role-label" for="dropdown">Role</label>
+  <select id="dropdown" name="role" required>
+    <option disabled selected value>Select current role</option>
+    <option value="student">Student</option>
+    <option value="full time">Working full-time</option>
+    <option value="part time">Working part-time</option>
+    <option value="other">Other</option>
+  </select>
+
+  <p>Would you recommend us to a friend?</p>
+  <div class="form-section">
+    <label>
+      <input type="radio" name="recommend" value="yes" checked />Yes</label>
+    <input type="radio" name="recommend" value="no" />No</label>
+  </div>
+
+  <p>What would you like to see improved? (Check all that apply)</p>
+  <div class="form-section">
+    <label>
+      <input name="prefer" value="this" type="checkbox" />This</label>
+    <label>
+      <input name="prefer" value="that" type="checkbox" />That</label>
+  </div>
+
+  <p>Any comments or suggestions?</p>
+  <textarea id="comments" name="comment" placeholder="Enter your comment here...">
+        </textarea>
+
+  <button type="submit" id="submit">Submit</button>
+</form>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
